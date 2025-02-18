@@ -1,0 +1,68 @@
+1. Understand the Problem/Goal:
+
+What is the purpose of this app? (To keep track of tasks)
+Who is the intended user? (You, or potentially others)
+What are the core features? (Add tasks, mark tasks as complete, view tasks)
+What are the potential stretch goals? (Delete tasks, edit tasks, due dates, etc.)
+2. Break Down the Problem (Decomposition):
+
+Divide the overall goal into smaller, manageable sub-problems or tasks. This is crucial for making the project less overwhelming.  For the to-do app:
+
+Task 1: User Interface (UI) Design:
+Design the HTML structure (input field, button, list).
+Style the elements with CSS.
+Task 2: Adding Tasks:
+Capture user input from the text field.
+Create a new task object (with text and a "completed" status).
+Add the task to a data structure (array).
+Update the UI to display the new task.
+Task 3: Displaying Tasks:
+Create list items (<li>) dynamically based on the tasks in the array.
+Display the task text in each list item.
+Add checkboxes to each list item.
+Task 4: Marking Tasks as Complete:
+Add event listeners to the checkboxes.
+When a checkbox is checked/unchecked, update the "completed" status of the corresponding task in the array.
+Update the UI to reflect the change (e.g., strikethrough).
+Task 5: (Optional) Local Storage:
+Save the tasks to local storage so they persist across sessions.
+Load the tasks from local storage when the app loads.
+Task 6: (Optional) Delete Tasks:
+Add delete buttons/icons to each task.
+When a delete button is clicked, remove the corresponding task from the array.
+Update the UI.
+3. Data Structures and Algorithms:
+
+What data will you need to store? (Task text, completed status)
+How will you store this data? (JavaScript array of objects)
+What algorithms will you need? (Adding a task, displaying tasks, marking tasks complete, potentially searching or filtering tasks later)
+4. User Interface (UI) Design (More Detailed):
+
+What HTML elements will you use? (Input field, button, unordered list, list items, checkboxes)
+What CSS styles will you apply? (Layout, fonts, colors, spacing)
+How will the user interact with the app? (Typing in the input field, clicking the button, checking checkboxes)
+5. Step-by-Step Logic (Pseudocode or Flowcharts):
+
+For each task, write out the steps in plain English (pseudocode) or create a flowchart. This helps you think through the logic before you translate it into code.
+
+Example Pseudocode (Adding a Task):
+
+Get the text from the input field.
+If the text is not empty: a. Create a new task object with the text and "completed" status set to false. b. Add the task object to the tasks array. c. Clear the input field. d. Update the UI to display the new task.
+6. Consider Edge Cases and Errors:
+
+What if the user tries to add an empty task? (Handle this by not adding the task or displaying an error message)
+What if local storage is full? (Handle this gracefully)
+Are there any other potential errors that could occur?
+7. Testing Plan:
+
+Think about how you will test your app to make sure it works correctly.  Test each feature individually.
+
+Example Test Cases:
+
+Add a task: Verify that the task is added to the list and displayed correctly.
+Mark a task as complete: Verify that the task's "completed" status is updated and the UI reflects the change (e.g., strikethrough).
+Add multiple tasks: Verify that all tasks are added and displayed correctly.
+8.  Prioritize:
+
+If you have stretch goals, decide which ones are most important and which ones you can leave for later.
